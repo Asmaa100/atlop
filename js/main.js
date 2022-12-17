@@ -20,3 +20,28 @@ $('.togglePassword').click( function (e) {
   inputPassword.attr("type", type)
   e.target.classList.toggle('fa-eye');
 });
+
+
+
+$(".owl-carousel.owl-categories").owlCarousel({
+  loop: true,
+  margin: 25,
+  nav: true,
+rtl:true,
+  autoplayTimeout: 2000,
+  autoplay: true,
+  autoplayHoverPause: true,
+  nav: true,
+  responsive: {
+    0: {
+      items: 3,
+    },
+    600: {
+      items: 6,
+    },
+    1000: {
+      items: 9,
+    },
+  },
+});
+
