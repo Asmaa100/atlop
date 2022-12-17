@@ -632,8 +632,8 @@ img.team-work{
 
 /* start filter sidebar */
 .filter-sidebar {
-  background-color: #fff4eb;
   padding: 10px 20px;
+  border-radius: 16px;
 }
 .filter-sidebar #sidebarCollapse {
   display: none;
@@ -674,9 +674,7 @@ img.team-work{
   color: var(--second-color);
   font-weight: bold;
 }
-.border-img{
-  border: 2px solid #E9AB75;
-}
+
 .brand .brand-name{
   color: var(--primary-color) !important;
 }
