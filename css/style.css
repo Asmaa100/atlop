@@ -598,6 +598,9 @@ img.team-work{
 .products button.owl-next {
   left: -55px;
 }
+.store_header .store_header_bg .store_header_info .wor-hours i{
+font-size: 18px;
+}
 /* end products */
 
 
@@ -632,8 +635,13 @@ img.team-work{
 
 /* start filter sidebar */
 .filter-sidebar {
-  padding: 10px 20px;
   border-radius: 16px;
+}
+.filter-sidebar .sidebar-header {
+  background-image:  linear-gradient(45deg,#3A4D95,#1C254A );
+  color: #fff !important;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 .filter-sidebar #sidebarCollapse {
   display: none;
@@ -645,7 +653,7 @@ img.team-work{
   margin-left: -450px;
 }
 .filter-sidebar #sidebar .sidebar-header {
-  padding: 20px 0;
+  padding: 10px 0;
   color: var(--primary-color);
 }
 
@@ -675,9 +683,7 @@ img.team-work{
   font-weight: bold;
 }
 
-.brand .brand-name{
-  color: var(--primary-color) !important;
-}
+
 .filter-sidebar .accordion-button:focus {
   box-shadow: none;
 }
@@ -699,58 +705,28 @@ img.team-work{
   background-color: var(--primary-color);
   box-shadow: none;
   border-color: var(--primary-color);
+
 }
-.filter-sidebar .price-range input {
-  border: 0;
-  color: var(--primary-color);
-  font-weight: bold;
-  background-color: transparent;
+.accordion-button:not(.collapsed)::after{
+  background-image: url(../images/arrow.svg);
 }
-.filter-sidebar .ui-state-default,
-.filter-sidebar .ui-widget-content .ui-state-default,
-.filter-sidebar .ui-state-default:hover,
-.filter-sidebar .ui-widget-content .ui-state-default:hover {
-  border: 2px solid var(--second-color);
-  background: var(--primary-color);
-  font-weight: normal;
-  color: #454545;
-  border-radius: 50%;
-}
-.filter-sidebar .ui-slider .ui-slider-range {
-  background-color: var(--primary-color);
-}
-.filter-sidebar .ui-widget.ui-widget-content {
-  background-color: #ac989a;
-  border-color: #ac989a;
-  height: 10px;
-}
-.filter-sidebar .filter-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 20px 0;
-}
-.color-check {
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
-  position: relative;
-  margin-right: 10px;
-  display: inline-block;
-  margin-bottom: 10px;
-  cursor: pointer;
-  margin-top: 5px;
-}
-@media (max-width: 991px) {
+
+
+@media (max-width: 768px) {
   #sidebarCollapse {
     display: block;
+    
+  }
+  .filter-sidebar{
+    background-color: transparent !important;
   }
   #sidebar {
     display: none;
+
   }
   #sidebar.active {
     display: inline-block;
+
   }
   .filter-sidebar {
     background-color: transparent;
@@ -763,8 +739,6 @@ img.team-work{
   .filter-sidebar #sidebarCollapse {
     display: block;
   }
-}
-@media (max-width: 768px) {
   #sidebar {
     margin-left: -250px;
   }

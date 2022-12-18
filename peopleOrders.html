@@ -180,7 +180,7 @@
   <section class="orders">
     <div class="container">
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-4">
           
           <div class="filter-sidebar wow fadeInRight h-100 bg-white" data-wow-duration="0.72s" data-wow-delay="0.7s">
             <button type="button" id="sidebarCollapse" class="btn btn-secondary">
@@ -188,8 +188,10 @@
                 <span class="text-center"> الفلترة </span>
             </button>
             <nav id="sidebar">
-                <div class="sidebar-header">
-                    <h3 class="text-center">الفلترة</h3>
+                <div class="sidebar-header d-flex align-items-center justify-content-center">
+                  <i class="fa-solid fa-filter mx-2"></i>
+
+                    <h6 class="text-center text-white m-0">الفلترة</h6>
                 </div>
                 <form action="">
                     <div class="accordion" id="accordionPanelsStayOpenExample">
@@ -198,7 +200,7 @@
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
                                     aria-controls="panelsStayOpen-collapseOne">
-                                    عدد النجوم
+                                    القسم الرئيسي
                                 </button>
                             </h2>
                             <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
@@ -208,29 +210,25 @@
                                         <input class="form-check-input" type="radio" name="flexRadioDefault"
                                             id="star1">
                                         <label class="form-check-label" for="star1">
-                                            نجمة واحدة
-                                        </label>
+                                          خدمة رئيسية                                        </label>
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="flexRadioDefault"
                                             id="star2">
                                         <label class="form-check-label" for="star2">
-                                            2 نجمة أو أكثر
-                                        </label>
+                                          خدمة رئيسية                                        </label>
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="flexRadioDefault"
                                             id="star3">
                                         <label class="form-check-label" for="star3">
-                                            3 نجمة أو أكثر
-                                        </label>
+                                          خدمة رئيسية                                        </label>
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="flexRadioDefault"
                                             id="star4">
                                         <label class="form-check-label" for="star4">
-                                            4 نجمة أو أكثر
-                                        </label>
+                                          خدمة رئيسية                                        </label>
                                     </div>
                                 </div>
                             </div>
@@ -241,55 +239,37 @@
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
                                     aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                                    المقاسات
+                                    القسم الفرعي
                                 </button>
                             </h2>
                             <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
                                 aria-labelledby="panelsStayOpen-sizes">
                                 <div class="accordion-body">
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" value="" id="size1">
-                                        <label class="form-check-label" for="size1">
-                                            S
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" value="" id="size2">
-                                        <label class="form-check-label" for="size2">
-                                            M
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" value="" id="size3">
-                                        <label class="form-check-label" for="size3">
-                                            L
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" value="" id="size4">
-                                        <label class="form-check-label" for="size4">
-                                            XL
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" value="" id="size5">
-                                        <label class="form-check-label" for="size5">
-                                            XXL
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" value="" id="size6">
-                                        <label class="form-check-label" for="size6">
-                                            XXXL
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" value="" id="size7">
-                                        <label class="form-check-label" for="size7">
-                                            XXXXL
-                                        </label>
-                                    </div>
-                                </div>
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="secondary-service"
+                                          id="secondary-service1">
+                                      <label class="form-check-label" for="secondary-service1">
+                                        خدمة فرعية                                        </label>
+                                  </div>
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="secondary-service"
+                                          id="secondary-service2">
+                                      <label class="form-check-label" for="secondary-service2">
+                                        خدمة فرعية                                        </label>
+                                  </div>
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="secondary-service"
+                                          id="secondary-service3">
+                                      <label class="form-check-label" for="secondary-service3">
+                                        خدمة فرعية                                        </label>
+                                  </div>
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="secondary-service"
+                                          id="secondary-service4">
+                                      <label class="form-check-label" for="secondary-service4">
+                                        خدمة فرعية                                        </label>
+                                  </div>
+                              </div>
                             </div>
                         </div>
                         <div class="accordion-item">
@@ -297,52 +277,26 @@
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive"
                                     aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
-                                    الألوان
+                                    خدمات اضافية
                                 </button>
                             </h2>
                             <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
                                 aria-labelledby="panelsStayOpen-color">
                                 <div class="accordion-body">
-                                    <div class="form-check d-flex justify-content-between">
-                                       <div>
-                                        <input class="form-check-input" type="checkbox" value="" id="color5">
-                                        <label class="form-check-label" for="color5" style="display:flex">
-                                            أسود <span class="color-check black"
-                                                style="background-color:black; "></span>
-                                        </label>
-                                       </div>
-                                       <div>
-                                        <input class="form-check-input" type="checkbox" value="" id="color1">
-                                        <label class="form-check-label red" for="color1" style="display:flex">
-                                            أحمر <span class="color-check black"
-                                                style="background-color:red; "></span>
-                                        </label>
-                                       </div>
-                                    </div>
-                                    <div class="form-check d-flex justify-content-between">
-                                        <div> <input class="form-check-input" type="checkbox" value="" id="color2">
-                                            <label class="form-check-label" for="color2" style="display:flex">
-                                                أزرق <span class="color-check blue"
-                                                    style="background-color:blue; "></span>
-                                            </label></div>
-                                        <div>
-                                            <input class="form-check-input" type="checkbox" value="" id="color3">
-                                            <label class="form-check-label" for="color3" style="display:flex">
-                                                أخضر <span class="color-check green"
-                                                    style="background-color:green; "></span>
-                                            </label>
-                                        </div>
-                                       
-                                    </div>
-                                  
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="color4">
-                                        <label class="form-check-label" for="color4" style="display:flex">
-                                            بني <span class="color-check brown"
-                                                style="background-color:brown; "></span>
-                                        </label>
-                                        
-                                    </div>
+                                
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" value="" id="size4">
+                                    <label class="form-check-label" for="size4">
+                                      خدمة اضافية
+                                    </label>
+                                </div>
+                                      
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="checkbox" value="" id="size4">
+                                  <label class="form-check-label" for="size4">
+                                    خدمة اضافية
+                                  </label>
+                              </div>
                                 </div>
                             </div>
                         </div>
@@ -354,7 +308,7 @@
             </nav>
         </div>
         </div>
-        <div class="col-md-9">
+        <div class="col-md-8">
           <div class="row mb-3">
             <div class="col-md-4">
               <select class="form-select" aria-label="Default select example">
@@ -387,8 +341,8 @@
           <div class="col-md-12 my-2">
             <div class="card mb-3 order-card">
               <div class="row g-0">
-                <div class="col-md-2 d-flex align-items-center justify-content-center">
-                  <img src="images/car.png" class=" rounded-circle" alt="..." width="120px" height="120px">
+                <div class="col-md-2 d-flex align-items-center justify-content-center p-2">
+                  <img src="images/car.png" class=" rounded-circle img-fluid img-fluid" alt="..." width="120px" height="120px">
                 </div>
                 <div class="col-md-10">
                   <div class="card-body">
@@ -417,8 +371,8 @@
           <div class="col-md-12 my-2">
             <div class="card mb-3 order-card">
               <div class="row g-0">
-                <div class="col-md-2 d-flex align-items-center justify-content-center">
-                  <img src="images/car.png" class=" rounded-circle" alt="..." width="120px" height="120px">
+                <div class="col-md-2 d-flex align-items-center justify-content-center p-2">
+                  <img src="images/car.png" class=" rounded-circle img-fluid m-2" alt="..." width="120px" height="120px">
                 </div>
                 <div class="col-md-10">
                   <div class="card-body">
@@ -447,8 +401,8 @@
           <div class="col-md-12 my-2">
             <div class="card mb-3 order-card">
               <div class="row g-0">
-                <div class="col-md-2 d-flex align-items-center justify-content-center">
-                  <img src="images/car.png" class=" rounded-circle" alt="..." width="120px" height="120px">
+                <div class="col-md-2 d-flex align-items-center justify-content-center p-2">
+                  <img src="images/car.png" class=" rounded-circle img-fluid" alt="..." width="120px" height="120px">
                 </div>
                 <div class="col-md-10">
                   <div class="card-body">
@@ -476,8 +430,8 @@
           <div class="col-md-12 my-2">
             <div class="card mb-3 order-card">
               <div class="row g-0">
-                <div class="col-md-2 d-flex align-items-center justify-content-center">
-                  <img src="images/car.png" class=" rounded-circle" alt="..." width="120px" height="120px">
+                <div class="col-md-2 d-flex align-items-center justify-content-center p-2">
+                  <img src="images/car.png" class=" rounded-circle img-fluid" alt="..." width="120px" height="120px">
                 </div>
                 <div class="col-md-10">
                   <div class="card-body">
@@ -506,8 +460,8 @@
           <div class="col-md-12 my-2">
             <div class="card mb-3 order-card">
               <div class="row g-0">
-                <div class="col-md-2 d-flex align-items-center justify-content-center">
-                  <img src="images/car.png" class=" rounded-circle" alt="..." width="120px" height="120px">
+                <div class="col-md-2 d-flex align-items-center justify-content-center p-2">
+                  <img src="images/car.png" class=" rounded-circle img-fluid img-fluid" alt="..." width="120px" height="120px">
                 </div>
                 <div class="col-md-10">
                   <div class="card-body">
@@ -535,8 +489,8 @@
           <div class="col-md-12 my-2">
             <div class="card mb-3 order-card">
               <div class="row g-0">
-                <div class="col-md-2 d-flex align-items-center justify-content-center">
-                  <img src="images/car.png" class=" rounded-circle" alt="..." width="120px" height="120px">
+                <div class="col-md-2 d-flex align-items-center justify-content-center p-2">
+                  <img src="images/car.png" class=" rounded-circle img-fluid" alt="..." width="120px" height="120px">
                 </div>
                 <div class="col-md-10">
                   <div class="card-body">
