@@ -218,84 +218,206 @@
   </nav>
   <!-- end navbar -->
 
-  <!-- start slider -->
-  <div id="carouselExampleIndicators" class="carousel slide home-slider" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="images/slider.png" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="images/slider.png" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="images/slider.png" class="d-block w-100" alt="...">
-      </div>
-    </div>
-
-  </div>
-  <!-- end slider -->
-
-
-
-  <!-- start categories -->
-  <section class="categories -5">
+<section class="order-details my-5">
     <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="bg-white p-5 text-center people-category">
-            <h4 class="mb-4">الأفراد</h4>
-            <a href="categories.html" class="">
-              <div class="card text-center px-3 category-offer w-75 m-auto">
-                <img src="images/order.png" width="100" height="100" class=" m-auto mt-3" alt="...">
-                <div class="card-body">
-                  <h5 class="card-text fw-bold">اطلب طلبك</h5>
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="publisher-info d-flex align-items-center justify-content-between bg-white p-3 mb-3">
+                    <div class="name  d-flex align-items-center ">
+                        <img src="images/publisher.png" class="rounded-circle" width="100px" height="100"> 
+                        <h6 class=" mb-0 me-3">أسماء إبراهيم</h6>
+                    </div>
+                    <div class="address  d-flex align-items-center ">
+                        <i class="fa-solid fa-location-dot fa-xl"></i>
+                        <h6 class="mb-0 me-2 text-dark" >مكة المكرمة، حي شرق</h6>
+                    </div>
+                    <div class="contact  d-flex align-items-center ">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn px-4" data-bs-toggle="modal" data-bs-target="#endOrderModal">
+                            إنهاء الطلب                       
+                         </button>
+  
+                    </div>
                 </div>
-              </div>
-            </a>
-            <a href="peopleOrders.html" class="">
+                <div class="order-info bg-white p-4 pb-5">
+                    <div class="d-flex align-items-center ">
+                            <h5 class="ms-5">سيارة ديجيتال</h5>
+                            <h5 class="me-5">الكمية: 9 سيارات</h5>
+                    </div>
+                
+                    <p class="fw-bold"style="font-size:12px">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن</p>
+                    <div id="carouselExampleIndicators" class="carousel slide order-slider" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="images/order-car.png" class="d-block w-100 " height="300" alt="...">
+                            <div class="carousel-caption d-flex align-items-center px-3 py-2">
+                                <p class="mb-0">السعر المتوقع:
+                                    <br> 100 ألف - 120 ألف</p>
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/order-car.png" class="d-block w-100 " height="300"alt="...">
+                            <div class="carousel-caption d-flex align-items-center px-3 py-2">
+                                <p class="mb-0">السعر المتوقع:
+                                    <br> 100 ألف - 120 ألف</p>
+                                </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/order-car.png" class="d-block w-100 " height="300" alt="...">
+                            <div class="carousel-caption d-flex align-items-center px-3 py-2">
+                                <p class="mb-0">السعر المتوقع:
+                                    <br> 100 ألف - 120 ألف</p>
+                              </div>
+                          </div>
+                        </div>
+                    
+                      </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="addition-details bg-white mb-3">
+                    <div class=" p-3 cont-details">
+                        <h6 class="fw-bold">التفاصيل</h6>
+                        <div class=" d-flex align-items-center justify-content-between">
+                            <div class="main  d-flex align-items-center ">
+                              <p>القسم الرئيسي: سيارة</p>
+                            </div>
+                            <div class="second  d-flex align-items-center ">
+                             <p>القسم الفرعي: بيضاء اللون</p>
+                            </div>
+                        </div>
+                    
+                        <div class="additional  d-flex align-items-center ">
+                            <p>الخدمة الإضافية: موديل 2022</p>
+      
+                        </div>
+                    </div>
+                    <div class="comments ">
+                      <div class="p-3">
+                        <h6 class="fw-bold mb-3">التعليقات</h6>
+                        <div class=" d-flex align-items-center justify-content-between position-relative comment mb-3">
+                            <div class="main  d-flex  ">
+                            <img src="images/user2.png" width="50" height="50">
+                            <div class="me-2">
+                                <h6>أحمد محمد</h6>
+                                <p>المنتج مناسب جدا</p>
+                            </div>
+                        
+                            </div>
+                            <div class="date d-flex align-items-center ">
+                                <p>
+                                تم النشر في 3:14 مساءا
+                               </p>
+                               </div>
+                        </div>
+                    
+                        <div class=" d-flex align-items-center justify-content-between position-relative comment mb-3">
+                            <div class="main  d-flex  ">
+                            <img src="images/user2.png" width="50" height="50">
+                            <div class="me-2">
+                                <h6>أحمد محمد</h6>
+                                <p>المنتج مناسب جدا</p>
+                            </div>
+                        
+                            </div>
+                            <div class="date d-flex align-items-center ">
+                                <p>
+                                تم النشر في 3:14 مساءا
+                               </p>
+                               </div>
+                        </div>
+                        <div class=" d-flex align-items-center justify-content-between position-relative comment mb-3">
+                            <div class="main  d-flex  ">
+                            <img src="images/user2.png" width="50" height="50">
+                            <div class="me-2">
+                                <h6>أحمد محمد</h6>
+                                <p>المنتج مناسب جدا</p>
+                            </div>
+                        
+                            </div>
+                            <div class="date d-flex align-items-center ">
+                                <p>
+                                تم النشر في 3:14 مساءا
+                               </p>
+                               </div>
+                        </div>
+                        <div class=" d-flex align-items-center justify-content-between position-relative comment mb-3">
+                            <div class="main  d-flex  ">
+                            <img src="images/user2.png" width="50" height="50">
+                            <div class="me-2">
+                                <h6>أحمد محمد</h6>
+                                <p>المنتج مناسب جدا</p>
+                            </div>
+                        
+                            </div>
+                            <div class="date d-flex align-items-center ">
+                                <p>
+                                تم النشر في 3:14 مساءا
+                               </p>
+                               </div>
+                        </div>
+                        <div class=" d-flex align-items-center justify-content-between position-relative comment mb-3">
+                            <div class="main  d-flex  ">
+                            <img src="images/user2.png" width="50" height="50">
+                            <div class="me-2">
+                                <h6>أحمد محمد</h6>
+                                <p>المنتج مناسب جدا</p>
+                            </div>
+                        
+                            </div>
+                            <div class="date d-flex align-items-center ">
+                                <p>
+                                تم النشر في 3:14 مساءا
+                               </p>
+                               </div>
+                        </div>
+                        <div class=" d-flex align-items-center justify-content-between position-relative comment mb-3">
+                            <div class="main  d-flex  ">
+                            <img src="images/user2.png" width="50" height="50">
+                            <div class="me-2">
+                                <h6>أحمد محمد</h6>
+                                <p>المنتج مناسب جدا</p>
+                            </div>
+                        
+                            </div>
+                            <div class="date d-flex align-items-center ">
+                                <p>
+                                تم النشر في 3:14 مساءا
+                               </p>
+                               </div>
+                        </div>
+                      </div>
+                      
+                        <form class="send-comment d-flex align-items-center justify-content-between bg-white mb-3 mt-5 p-3">
+                            <div class="name  d-flex align-items-center ">
+                                <img src="images/user.png" class="rounded-circle" width="50px" height="50"> 
+                            </div>
+                            <div class="address  d-flex align-items-center ">
+                                <input type="text"  class="form-control" placeholder="اكتب تعليقك هنا" aria-describedby="">
+                               
+                            </div>
+                            <div class="contact  d-flex align-items-center ">
+                                <!-- Button trigger modal -->
+                                <button type="submit" class="btn px-2" >
+                                    إرسال                       
+                                 </button>
+          
+                            </div>
+                        </form>
 
-              <div class="card text-center px-3 category-offer mt-4 w-75 m-auto">
-                <img src="images/gift.png" width="100" height="100" class=" m-auto mt-3" alt="...">
-                <div class="card-body">
-                  <h5 class="card-text fw-bold"> عرض الطلبات</h5>
+                    </div>
                 </div>
-              </div>
-            </a>
-          </div>
+            </div>
         </div>
-        <div class="col-md-6">
-          <div class=" p-5 text-center company-category">
-            <h4 class="mb-4">الشركات والمؤسسات</h4>
-            <a href="companyCreateOrder.html" class="">
-              <div class="card text-center px-3 category-offer w-75 m-auto">
-                <img src="images/order.png" width="100" height="100" class=" m-auto mt-3" alt="...">
-                <div class="card-body">
-                  <h5 class="card-text fw-bold">اطلب طلبك</h5>
-                </div>
-              </div>
-            </a>
-            <a href="#" class="">
-
-              <div class="card text-center px-3 category-offer mt-4 w-75 m-auto">
-                <img src="images/gift.png" width="100" height="100" class=" m-auto mt-3" alt="...">
-                <div class="card-body">
-                  <h5 class="card-text fw-bold"> عرض الطلبات</h5>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
     </div>
 
 
-  </section>
-  <!-- end categories -->
+</section>
   <nav>
     <div class="container"></div>
   </nav>
@@ -307,7 +429,7 @@
                     <div class="mb-2"><i class="fa-solid fa-house-chimney-window fa-xl"></i></div>
                     <div class=navLabel>الرئيسية</div>
                 </a></div>
-            <div class=navLink><a href=myOrders.html>
+            <div class=navLink><a href=#>
                     <div class="mb-2"><i class="fa-solid fa-cart-shopping fa-xl"></i></div>
                     <div class=navLabel>طلباتي</div>
                 </a></div>
@@ -316,7 +438,7 @@
                     <div class="mb-2"><i class="fa-regular fa-message fa-xl"></i></div>
                     <div class=navLabel>رسائلي</div>
                 </a></div>
-            <div class=navLink><a href="profile.html">
+            <div class=navLink><a href=#>
                     <img src="images/user.png" width="40px" height="40">
                     <div class=navLabel>حسابي</div>
                 </a></div>
@@ -325,6 +447,26 @@
     </div>
   </div>
 </div>
+
+
+
+  <!-- Modal -->
+  <div class="modal model-end-order fade" id="endOrderModal" data-bs-backdrop="static" data-bs-keyboard="false"
+  tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content w-auto m-auto">
+
+          <a href="index.html">
+
+              <div class="modal-body">
+                  <h5> تم إنهاء منتجك بنجاح !</h5>
+              </div>
+          </a>
+
+      </div>
+  </div>
+</div>
+
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="https://kit.fontawesome.com/b4c05b8dbd.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
@@ -333,7 +475,20 @@
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/main.js"></script>
   <script>
+function myFunction() {
+  // Get the text field
+  var copyMobile= document.getElementById("myMobile");
 
+  copyMobile.select();
+  copyMobile.setSelectionRange(0, 99999); // For mobile devices
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(copyMobile.value);
+
+
+  document.querySelector(".copyText").innerHTML = "تم النسخ";
+
+}
   </script>
 
 </body>

@@ -217,85 +217,80 @@
       </div>
   </nav>
   <!-- end navbar -->
-
-  <!-- start slider -->
-  <div id="carouselExampleIndicators" class="carousel slide home-slider" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="images/slider.png" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="images/slider.png" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="images/slider.png" class="d-block w-100" alt="...">
-      </div>
-    </div>
-
-  </div>
-  <!-- end slider -->
-
-
-
-  <!-- start categories -->
-  <section class="categories -5">
+  <section class="confirm-register edit-profile w-100 " style="height: 100vh;"> 
     <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="bg-white p-5 text-center people-category">
-            <h4 class="mb-4">الأفراد</h4>
-            <a href="categories.html" class="">
-              <div class="card text-center px-3 category-offer w-75 m-auto">
-                <img src="images/order.png" width="100" height="100" class=" m-auto mt-3" alt="...">
-                <div class="card-body">
-                  <h5 class="card-text fw-bold">اطلب طلبك</h5>
+        <div class="row justify-content-center">
+            <div class="col-lg-7 col-md-8 form-cont ">
+                <form action="" class="bg-white p-5 confirm-register-form form-body mt-5">
+                  <h2 class="modal-title w-100 fw-bold mb-4">تعديل البيانات الشخصية </h2>
+                  <h6 class="fw-bold mb-4">            الصورة الشخصية
+                  </h6>
+                  <div class="d-flex  align-items-center change-img mb-4 p-2 w-100">     
+                    <div class="  d-flex justify-content-center align-items-center">
+                        <div class=" ">   
+                          <img src="images/gift.png" width="80px" height="80px">                   
+                            <input type="file" name="photo" id="upload-photo" />
+                        </div>
+                    </div>
+                    <label for="upload-photo" class="text-dark mx-4 fw-bold">تغيير الصورة الشخصية</label>
+      
+                </div>
+                  <div class="row">
+                    <div class="col-lg-6 mb-3 ">
+                      <label class="mb-3 fw-bold"> اسم المستخدم الأول</label>
+                      <input type="text" name="firstNmae" class="form-control" id="">
+                    </div>
+                    <div class="col-lg-6 mb-3 ">
+                      <label class="mb-3 fw-bold">اسم المستخدم الأخير</label>
+                      <input type="text" name="lastName" class="form-control" id="">
+                    </div>
+                  <div class="col-md-12 mb-3">
+                    <label class="mb-3 fw-bold">البريد الالكتروني</label>
+                    <input type="email" name="email" class="form-control" id="">
+                  </div>
+                  <div class="col-md-12 mb-3">
+                      <label class="mb-3 fw-bold"> رقم الجوال</label>
+                      <input type="text" name="phone" class="form-control" id="">
+                    </div>
+            
+                  <div class="col-md-12 mb-3 input-box">
+                      <label class="mb-3 fw-bold"> نبذة عن المستخدم </label>
+                      <div class="form-floating">
+                          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                        </div>
+                    </div>
+            
+          
+                <label class="mb-3 fw-bold">   طريقة التواصل</label>
+                <div class="col-md-4">
+            
+                  <input type="radio" name="type" value="provider" class="me-3  form-check-input" id="info_gender">
+                  <label class="">  رقم الجوال
+                  </label>
+                </div>
+                <div class="col-md-4">
+            
+                  <input type="radio" name="type" value="provider" class="me-3  form-check-input" id="info_gender">
+                  <label class=""> رسائل الموقع الالكتروني
+                  </label>
                 </div>
               </div>
-            </a>
-            <a href="peopleOrders.html" class="">
-
-              <div class="card text-center px-3 category-offer mt-4 w-75 m-auto">
-                <img src="images/gift.png" width="100" height="100" class=" m-auto mt-3" alt="...">
-                <div class="card-body">
-                  <h5 class="card-text fw-bold"> عرض الطلبات</h5>
-                </div>
+      
+      
+                  <div class="text-center log m-auto mb-3 mt-4">
+                    <button type="button" class="btn py-2"> <a href="confirmRegister.html" class="text-white">  تأكيد </a>
+                    </button>
+                  </div>
+          
+                </form>
               </div>
-            </a>
-          </div>
+          
         </div>
-        <div class="col-md-6">
-          <div class=" p-5 text-center company-category">
-            <h4 class="mb-4">الشركات والمؤسسات</h4>
-            <a href="companyCreateOrder.html" class="">
-              <div class="card text-center px-3 category-offer w-75 m-auto">
-                <img src="images/order.png" width="100" height="100" class=" m-auto mt-3" alt="...">
-                <div class="card-body">
-                  <h5 class="card-text fw-bold">اطلب طلبك</h5>
-                </div>
-              </div>
-            </a>
-            <a href="#" class="">
-
-              <div class="card text-center px-3 category-offer mt-4 w-75 m-auto">
-                <img src="images/gift.png" width="100" height="100" class=" m-auto mt-3" alt="...">
-                <div class="card-body">
-                  <h5 class="card-text fw-bold"> عرض الطلبات</h5>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
+  
+       
     </div>
-
-
   </section>
-  <!-- end categories -->
+
   <nav>
     <div class="container"></div>
   </nav>

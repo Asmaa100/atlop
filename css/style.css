@@ -3,6 +3,10 @@
   font-family: "poppins";
   src: url("../fonts/Poppins-Light.ttf");
 }
+*{
+  margin: 0;
+  padding: 0;
+}
 body {
   direction: rtl;
   /* font-family: "Cairo", sans-serif; */
@@ -16,6 +20,14 @@ body {
   --primary-color:#3A4C94;
   --second-color:#160D60;
   --third-color:#ECECEC
+}
+::-webkit-scrollbar-thumb {
+  background-color: #160D60;
+  border-radius: 0px;
+}
+::-webkit-scrollbar {
+  width: 4px;
+  background-color: transparent;
 }
 ul, ol {
   list-style: none;
@@ -64,17 +76,6 @@ border-radius: 7px;
   display:inline-block;
 }
 .hamLine {
-  /* display:block;
-  width:30px; 
-   margin-top:4px;
-  border-top:5px solid var(--second-color);
-  vertical-align:middle;
-  transform-origin:5% 15%;  transition : all 200ms linear;
-
-  transition : all 200ms linear;
-  width: 30px;
-  height: 2px;
- */
   border-radius: 8px;
   width: 30px;
     height: 5px;
@@ -119,6 +120,63 @@ border-radius: 7px;
 .side-navbar-content {
   display: none;
 }
+nav .navbar-nav-icons .notification-menu{
+  width: 400px;
+  border: none;
+  border-radius: 8px;
+  top: 10px !important;
+  right:-180px !important;
+}
+nav .navbar-nav-icons .notification-menu li{
+  border-radius: 8px;
+}
+nav .navbar-nav-icons .notification-menu li a{
+  border-bottom: 1px solid #dbd4d4;
+}
+nav .navbar-nav-icons .notification-menu li:hover,
+nav .navbar-nav-icons .notification-menu li a.active{
+background-color: #F8F8F8
+;
+}
+nav .navbar-nav-icons .notification-menu li:first-child a{
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+nav .navbar-nav-icons .notification-menu li:last-child a
+{  
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+
+}
+nav .navbar-nav-icons .notification-menu li:last-child a{
+  border-bottom: none;
+}
+nav .navbar-nav-icons .notification-menu li .name{
+  color: var(--primary-color);
+}
+nav .navbar-nav-icons .notification-menu li .content{
+  font-size: 13px;
+}
+nav .navbar-nav-icons .notification-menu li .time{
+  font-size: 11px;
+}
+nav .navbar-nav-icons span.badge{
+  background-color: #EFB700;
+  border-radius: 50% !important;
+  width: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.side-navbar-content .side-nav-notifications .notification-menu{
+  top: inherit !important;
+  right: 0 !important;
+  width: 90%;
+  height: 200px;
+  overflow: auto;
+  text-align: right;
+}
+nav .side-navbar-content .side-nav-notifications span.badge{}
 @media (max-width:762px) {
   .navbar-nav-icons ,.login-button{
     display: none !important;
@@ -187,7 +245,7 @@ border-radius: 7px;
 .categories .people-category .category-offer:hover, 
 .categories .company-category .category-offer:hover{
   background-image: linear-gradient(var(--primary-color) 0%, #1D264A 100%);
-  color: #fff;
+  color: #fff !important;
   transform: scale(1.1);
 }
 .categories .people-category .category-offer:hover img, 
@@ -403,7 +461,7 @@ img.team-work{
   border-radius: 16px;
   margin-bottom: 100px !important;
 }
-.create-order-form>h3,h5{
+.create-order-form>h3,.create-order-form h5{
   color: var(--second-color);
 }
 .create-order-form .progress-bar{
@@ -809,6 +867,10 @@ border-bottom: 1px solid #707070;
 .addition-details>div h6{
   color: var(--primary-color);
 }
+.addition-details .comments>div{
+  height: 500px;
+  overflow: auto;
+}
 .addition-details .comments .comment  p{
   word-break: break-word;
 }
@@ -842,6 +904,21 @@ font-size: 11px;
 .contactType-modal .form-check input:focus{
   box-shadow: none;
 }
+.contactType-modal .form-check .copy i{
+  cursor: pointer;
+}
+.contactType-modal  #myMobile,
+.contactType-modal  #myMobile:focus,
+.contactType-modal  #myMobile:focus-visible,
+.contactType-modal .copy button,
+.contactType-modal .copy button:focus{
+  border: none !important;
+  background-color:#fff;
+  outline: none;
+}
+.contactType-modal  #myMobile{
+  width: 120px;
+}
 .addition-details{}
 @media (max-width:772px) {
   .order-slider  .carousel-item img{
@@ -852,5 +929,115 @@ font-size: 11px;
     padding-bottom: 0 !important;
   }
 }
-
+.order-details .reorder{
+  background-image: linear-gradient(#3A4D95,#1C254A );
+  color: #fff;
+}
 /* end order-details */
+/* start my orders */
+.my-orders{
+  margin-bottom: 100px !important;
+}
+.my-orders .tab-content{
+  background-color: #F9F9F9;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+.my-orders .nav-pills .nav-link{
+  background-color: #d4d7de;
+  color: var(--primary-color);
+  border-radius: 0;
+}
+.my-orders .nav-pills .nav-item:first-child button{
+  border-top-right-radius:16px;
+}
+.my-orders .nav-pills .nav-item:last-child button{
+  border-top-left-radius:16px;
+}
+.my-orders .nav-pills .nav-link.active, .my-orders .nav-pills .show>.nav-link{
+  color: #fff;
+  background-image: linear-gradient(#3A4D95,#1C254A );;
+}
+.my-orders  .order-card .type{
+  color: var(--primary-color);
+}
+
+@media (max-width:992px) {
+  .my-orders .more-details {
+    display: block !important;
+    margin-bottom: 20px;
+  
+  }
+}
+
+/* end my orders */
+
+#endOrderModal h5{
+  color: var(--primary-color);
+}
+
+/* start profile */
+.profile{
+  background-image: url(../images/orderBackground.png);
+}
+.profile .user-details {
+  border-radius: 16px;
+  margin-bottom: 100px !important;
+}
+.profile .user-details  .name ,
+.profile .user-details i{
+  color: var(--primary-color);
+}
+.profile .user-details .edit a{
+  background-image: linear-gradient(#3A4D95,#1C254A );
+  color: #fff;
+  
+}
+.profile .user-details .contact-info .data{
+  color: var(--primary-color);
+  font-weight: bold;
+}
+.profile .user-details .phone{
+  direction: ltr;
+}
+.profile .user-details .desc p{
+  font-size: 13px;
+} 
+@media (max-width:772px) {
+  .profile .user-details .user-info,
+  .profile .user-details .user-info .name,
+  .profile .user-details .user-info .address,
+  .profile .user-details .user-info .edit,
+  .profile .user-details .contact-info{
+    display: block !important;
+    text-align: center;
+  }
+  .profile .user-details .user-info{
+    position: relative;
+  }
+  .profile .user-details .edit{
+    position: absolute;
+    top: -41px;
+    left: -32px;
+  }
+  .profile .user-details .contact-info{
+    margin-top: 30px;
+  }
+  .profile .user-details .user-info .name,
+  .profile .user-details .user-info .address,
+  .profile .user-details .user-info .edit{
+    margin-top: 20px;
+  }
+}
+/* end profile */
+
+/* start edit profile */
+.edit-profile form{
+  border-radius: 16px;
+}
+.edit-profile form input {
+  color: #4D4A4A;
+  font-size: 13px;
+}
+
+/* end edit profile */
