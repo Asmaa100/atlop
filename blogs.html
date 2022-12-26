@@ -217,90 +217,64 @@
       </div>
   </nav>
   <!-- end navbar -->
-  <section class="confirm-register edit-profile w-100 " style="height: 100vh;"> 
+
+  <!-- start blogs -->
+  <section class="blogs my-5">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-7 col-md-8 form-cont ">
-                <form action="" class="bg-white p-4 confirm-register-form form-body mt-5">
-                  <h2 class="modal-title w-100 fw-bold mb-4">تعديل البيانات الشخصية </h2>
-                  <h6 class="fw-bold mb-4">            الصورة الشخصية
-                  </h6>
-                  <div class="d-flex  align-items-center change-img mb-4 p-2 w-100">     
-                    <div class="  d-flex justify-content-center align-items-center">
-                        <div class=" ">   
-                          <img src="images/gift.png" width="80px" height="80px" id="img">                   
-                            <input type="file" name="photo" id="upload-photo" onchange="document.getElementById('img').src = window.URL.createObjectURL(this.files[0])" />
+        <h2 class="fw-bold">المدونة</h2>
+        <div class="row">
+            <a href="blogDetails.html"  class="col-lg-4 col-md-6 mb-4">
+                    <div class="card blog-card">
+                        <img src="images/blog1.png" class="card-img-top" height="270px" alt="...">
+                        <div class="card-body pb-4">
+                            <div class="d-flex justify-content-between">
+                                <h5>سيارة ديجيتال</h5>
+                                <p class="date">10/7/2022 <span class="me-1"> في 3:14</span></p>
+                                
+                            </div>
+                            
+                          <p class="card-text">
+                            هذا النص هو مثال لنص يمكن يستبدل في نفس النص، لقد تم توليد هذا النص من مولد النص العربىهذا النص هو مثال لنص يمكن يستبدل في نفس النص، لقد تم توليد هذا النص من مولد النص العربى هذا النص هو مثال لنص يمكن يستبدل في نفس النص، لقد تم توليد هذا النص من مولد النص العربى
+                          </p>
                         </div>
-                    </div>
-                    <label for="upload-photo" class="text-dark mx-4 fw-bold">تغيير الصورة الشخصية</label>
-      
-                </div>
-                  <div class="row">
-                    <div class="col-lg-6 mb-3 ">
-                      <label class="mb-3 fw-bold"> اسم المستخدم الأول</label>
-                      <input type="text" name="firstNmae" class="form-control" id="">
-                    </div>
-                    <div class="col-lg-6 mb-3 ">
-                      <label class="mb-3 fw-bold">اسم المستخدم الثاني</label>
-                      <input type="text" name="lastName" class="form-control" id="">
-                    </div>
-                  <div class="col-md-12 mb-3">
-                    <label class="mb-3 fw-bold">البريد الالكتروني</label>
-                    <input type="email" name="email" class="form-control" id="">
-                  </div>
-                  <div class="col-md-12 mb-3">
-                      <label class="mb-3 fw-bold"> رقم الجوال</label>
-                      <input type="text" name="phone" class="form-control" id="">
-                    </div>
-            
-                  <div class="col-md-12 mb-3 input-box">
-                      <label class="mb-3 fw-bold"> نبذة عن المستخدم </label>
-                      <div class="form-floating">
-                          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                      </div>
+            </a>
+           
+            <a href="#" class="col-lg-4 col-md-6 mb-4">
+                <div class="card blog-card">
+                    <img src="images/blog2.png" class="card-img-top" height="270px" alt="...">
+                    <div class="card-body pb-4">
+                        <div class="d-flex justify-content-between">
+                            <h5>سيارة ديجيتال</h5>
+                            <p class="date">10/7/2022 <span class="me-1"> في 3:14</span></p>
+                            
                         </div>
-                    </div>
-            
-          
-                <label class="mb-3 fw-bold">   طريقة التواصل</label>
-                <div class="col-md-4 mb-3">
-            
-                  <input type="radio" name="type" value="provider" class="  form-check-input" id="info_gender">
-                  <label class="">  رقم الجوال
-                  </label>
-                </div>
-                <div class="col-lg-5 col-md-8 mb-3">
-            
-                    <input type="radio" name="type" value="provider" class="me-3  form-check-input" id="info_gender">
-                    <label class="">  رسائل الموقع الالكتروني
-                    </label>
-                  </div>
-                  <div class="col-md-12 mb-3">
-                   
-                    <label class="mb-3 fw-bold"> كلمة المرور </label>
-                  
-                    <div class="d-flex align-items-center">
-                      <input type="password" name="password" class="form-control w-50" id="">
-                      <a href="changePassword.html" class="me-3 change-password-link fw-bold">تغيير كلمة المرور</a>
+                        
+                      <p class="card-text">
+                        هذا النص هو مثال لنص يمكن يستبدل في نفس النص، لقد تم توليد هذا النص من مولد النص العربىهذا النص هو مثال لنص يمكن يستبدل في نفس النص، لقد تم توليد هذا النص من مولد النص العربى هذا النص هو مثال لنص يمكن يستبدل في نفس النص، لقد تم توليد هذا النص من مولد النص العربى
+                      </p>
                     </div>
                   </div>
-        
-              </div>
-      
-      
-                  <div class="text-center save m-auto mb-3 mt-4">
-                    <button type="button" class="btn py-2  w-50"> <a href="index.html" class="text-white">  حفظ </a>
-                    </button>
+                </a>
+                <a href="#"  class="col-lg-4 col-md-6 mb-4">
+                <div class="card blog-card">
+                    <img src="images/blog3.png" class="card-img-top" height="270px" alt="...">
+                    <div class="card-body pb-4">
+                        <div class="d-flex justify-content-between">
+                            <h5>سيارة ديجيتال</h5>
+                            <p class="date">10/7/2022 <span class="me-1"> في 3:14</span></p>
+                            
+                        </div>
+                        
+                      <p class="card-text">
+                        هذا النص هو مثال لنص يمكن يستبدل في نفس النص، لقد تم توليد هذا النص من مولد النص العربىهذا النص هو مثال لنص يمكن يستبدل في نفس النص، لقد تم توليد هذا النص من مولد النص العربى هذا النص هو مثال لنص يمكن يستبدل في نفس النص، لقد تم توليد هذا النص من مولد النص العربى
+                      </p>
+                    </div>
                   </div>
-          
-                </form>
-              </div>
-          
+                </a>
         </div>
-  
-       
     </div>
   </section>
-
 
   <nav>
     <div class="container">
@@ -340,7 +314,6 @@
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/main.js"></script>
   <script>
-
 
   </script>
 

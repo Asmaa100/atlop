@@ -13,6 +13,8 @@ window.onload = function(e){
   })
   
 }
+
+
 $('.togglePassword').click( function (e) {
   // toggle the type attribute
   let inputPassword = $(e.target).closest(".input-box").find(".id_password")
@@ -20,8 +22,6 @@ $('.togglePassword').click( function (e) {
   inputPassword.attr("type", type)
   e.target.classList.toggle('fa-eye');
 });
-
-
 
 $(".owl-carousel.owl-categories").owlCarousel({
   loop: true,

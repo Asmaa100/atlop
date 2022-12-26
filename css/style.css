@@ -126,6 +126,8 @@ nav .navbar-nav-icons .notification-menu{
   border-radius: 8px;
   top: 10px !important;
   right:-180px !important;
+  max-height: 400px;
+  overflow: auto;
 }
 nav .navbar-nav-icons .notification-menu li{
   border-radius: 8px;
@@ -282,6 +284,7 @@ height: 85px;
   background-image: url("../images/background.png");
   background-size: 100% 100%;
   height: 500px;
+  
 }
 img.team-work{
   position: absolute;
@@ -318,18 +321,23 @@ img.team-work{
 .forms .form-body textarea:focus{
   box-shadow:none ;
 }
-.forms .form-body .input-box{
+.forms .form-body .input-box,
+.change-password form .input-box{
   position: relative;
 }
 .forms .form-body .input-box i,
-.forms .form-body .input-box a{
+.forms .form-body .input-box a ,
+.change-password form .input-box i,
+.change-password form .input-box a{
   position: absolute;
   top: 49px;
   left: 15px;
   color: var(--primary-color);
 }
 .forms .register-form .input-box i ,
-.forms .form-body .input-box a{
+.forms .form-body .input-box a ,
+.change-password form .input-box i,
+.change-password form .input-box a{
   left: 25px;
 
 }
@@ -454,8 +462,10 @@ img.team-work{
 .create-order {
   background-image: url("../images/orderBackground.png");
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   position: relative;
+  background-color: #ECECEC;
+
 }
 .create-order-form {
   border-radius: 16px;
@@ -680,15 +690,21 @@ font-size: 18px;
 .orders{
   margin-bottom: 100px;
 }
-.orders .order-card{
+.orders .order-card ,
+.favorites .order-card{
   border-radius: 16px;
   border: none;
 }
-.orders .order-card h5, .orders .order-card .price,
-.orders .order-card  i{
+.orders .order-card h5,
+ .orders .order-card .price,
+.orders .order-card  i,
+.favorites .order-card h5,
+.favorites .order-card .price ,
+.favorites .order-card i{
   color: var(--primary-color);
 }
-.orders .order-card button{
+.orders .order-card button ,
+.favorites .order-card button{
   background-color: transparent;
   border:none
 }
@@ -1032,12 +1048,193 @@ font-size: 11px;
 /* end profile */
 
 /* start edit profile */
-.edit-profile form{
-  border-radius: 16px;
+.edit-profile ,
+.change-password{
+  background-image: url("../images/orderBackground.png");
+  background-size: cover;
+  height: 100% !important;
+  background-color: #ECECEC;
+
 }
-.edit-profile form input {
+.edit-profile form ,
+.change-password form{
+  border-radius: 16px;
+  margin-bottom: 100px;
+  box-shadow:  0 3px 6px #00000029;
+}
+.edit-profile form input ,
+.change-password form input{
   color: #4D4A4A;
   font-size: 13px;
 }
-
+.edit-profile form .modal-title ,
+.change-password form .modal-title{
+  color: var(--second-color);
+}
+.edit-profile form input[type="radio"]:focus{
+  box-shadow: none;
+}
+.edit-profile form input[type="radio"]:checked{
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  
+}
+.edit-profile form .change-password-link {
+  color: var(--primary-color);
+}
+.edit-profile form .save button ,
+.change-password form .save button{
+  background:  linear-gradient(-45deg,#3A4D95,#1C254A );
+}
 /* end edit profile */
+
+/* start favorites */
+.favorites{
+  margin-bottom: 100px !important;
+}
+.favorites .fav-header{
+  color: var(--second-color);
+}
+@media (max-width: 992px){
+  .favorites .order-card  .more-details ,
+  .orders .order-card .more-details {
+    display: block !important;
+    margin-bottom: 20px;
+}
+}
+
+/* end favorites */
+
+/* start blogs  */
+.blogs{
+  margin-bottom: 100px !important;
+}
+.blogs h2{
+  color: var(--second-color);
+}
+.blogs  a{
+  color: #000;
+}
+.blogs .blog-card
+ {
+  border-radius: 16px;
+  border: 0;
+}
+.blogs .blog-card  img{
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+}
+.blogs .blog-card .date{
+  font-size: 13px;
+  color: #585858;
+}
+.blogs .blog-card h5{
+  color: var(--primary-color);
+}
+/* end blogs */
+
+/* start blog-details */
+.blog-details{
+  margin-bottom: 100px;
+}
+.blog-details .background-blog{
+  background-image: url("../images/blog-background.png");
+  background-size: cover;
+  height: 400px;
+  border-radius: 16px;
+}
+.blog-details .blog-header h5{
+  color: var(--primary-color);
+}
+.blog-details .blog-header{
+  position: relative;
+}
+.blog-details .blog-header p{
+  position: absolute;
+  top: -12px;
+  left: 25px;
+  font-size: 13px;
+  line-height: 2;
+}
+@media (max-width:992px) {
+  .blog-details .background-blog{
+    height: 250px;
+  }
+}
+/* end blog-details */
+
+/* start bank account */
+.bank-account ,
+.conditions,
+.about-us{
+  background-image: url("../images/orderBackground.png");
+  background-size: cover;
+  height: 100% !important;
+  background-color: #ECECEC;
+}
+.bank-account .account-details,
+.conditions .conditions-details,
+.about-us .about-us-details{
+  margin-bottom: 100px;
+  border-radius: 16px;
+  box-shadow:  0 3px 6px #00000029;
+}
+.bank-account .account-details h2,
+.conditions .conditions-details h2,
+.about-us .about-us-details h2{
+  color: var(--second-color);
+}
+.bank-account .account-details .bank-desc ,
+.conditions .conditions-details .cont-desc,
+.about-us .about-us-details .about-us-desc{
+  line-height: 2;
+}
+.bank-account .account-details span.phone,
+.about-us .about-us-details .about-us-contact h5{
+  color: var(--primary-color);
+}
+/* end bank account */
+
+/* start about us */
+.about-us .about-us-details .about-us-contact input,
+.about-us .about-us-details .about-us-contact input:focus-visible{
+  border: 0 !important;
+  font-weight: bold;
+  outline: 0;
+  width: 120px;
+}
+.about-us .about-us-details .about-us-contact button{
+  border: 0 !important;
+  background-color: transparent !important;
+}
+.about-us .about-us-details .about-us-contact i.phone-icon{
+  color: var(--primary-color);
+}
+.about-us .about-us-details .about-us-contact button i,
+.about-us .about-us-details .about-us-contact i.phone-icon{
+  font-size:18px;
+
+}
+.about-us .about-us-details .social-media div{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+.about-us .about-us-details .social-media .facebook{
+  background-color: #0779E9;
+}
+.about-us .about-us-details .social-media .insta{
+  background-image: linear-gradient(221deg,#BD1C9D 38% ,#FADF02);
+}
+.about-us .about-us-details .social-media .youtube{
+  background-color: #E11414;
+}
+.about-us .about-us-details .social-media .snap{
+  background-color: #ECD500;
+}
+/* end about us */
