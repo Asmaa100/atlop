@@ -1238,3 +1238,141 @@ font-size: 11px;
   background-color: #ECD500;
 }
 /* end about us */
+
+/* start messages */
+.messages{
+  margin-bottom: 100px;
+}
+
+.messages .head-message{
+  color: var(--second-color);
+}
+.messages .side-menu{
+  border-radius: 16px;
+}
+.messages .my-name{
+  color: var(--primary-color);
+}
+.messages .status{
+  color: #20A700;
+}
+.messages .dot{
+  width: 8px;
+  height: 8px;
+  background-color: #20A700;
+  border-radius: 50%;
+  display: inline-block;
+
+}
+.messages .search {
+  position: relative;
+}
+.messages .search input{
+  background-color: #F8F8F8;
+  border-radius: 8px;
+  border: none;
+  color: var(--primary-color);
+}
+.messages .search input::placeholder{
+  color: var(--primary-color);
+}
+.messages .search input:focus{
+  box-shadow: none;
+}
+.messages .search button{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #BEBEBE;
+  cursor: pointer;
+  background: none;
+  border: 0;
+}
+
+.messages .contacts .nav-pills .nav-link{
+  box-shadow: 0px 2px 6px #00000029;
+
+}
+.messages .contacts .nav-pills .nav-link.active{
+  background-color: rgba(147, 154, 181,0.2)!important;
+  border-radius: 8px;
+  box-shadow: none;
+}
+.messages .contacts .nav-pills .nav-link .time{
+  font-size: 12px;
+}
+
+.messages .receiver-head {
+  background-color: rgba(147, 154, 181,0.2)!important;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+
+}
+.messages .message-content {
+  height: 400px;
+  position: relative;
+  background-color: #fff;
+}
+.messages .message-body .tab-content .write-message{
+  position: absolute;
+  bottom: 0;
+}
+.messages .message-body .tab-content .write-message .send{
+  background-image: linear-gradient(#3A4D95,#1C254A );
+  color: #fff;
+  width: 50px;
+  border: 0;
+  height: 40px;
+  border-radius: 8px;
+}
+.messages .message-body .tab-content .write-message .send i{
+  rotate: 225deg;
+}
+.messages .message-body .tab-content .write-message .input-send-message{
+  position: relative;
+  width: 90%;
+}
+.messages .message-body .tab-content .write-message .input-send-message button{
+  position: absolute;
+  left: 15px;
+  top: 25px;
+  background:none;
+  border: none;
+  color: var(--primary-color);
+}
+.messages .message-body .tab-content .write-message .input-send-message button.mice{
+  left: 40px;
+
+}
+.messages .message-body .tab-content .write-message .input-send-message input{
+  background-color: #ECECEC;
+  border-radius: 8px;
+  border: none;
+}
+.messages .message-body .tab-content .write-message .input-send-message input:focus{
+  box-shadow: none;
+}
+.messages .message-body .tab-content .write-message .input-send-message input::placeholder{
+  color: var(--primary-color);
+}
+.messages .sender-msg{
+  direction: ltr;
+}
+.messages .sender-msg p ,.messages .messenger-msg  p{
+max-width: 45%;
+text-align: right;
+background-color: var(--primary-color);
+border-radius: 16px;
+color: #fff;
+}
+.messages .messenger-msg p{
+  background-color: rgba(147, 154, 181,0.2)!important;
+  color: #000;
+}
+@media (max-width:768px) {
+  .messages .sender-msg p ,.messages .messenger-msg  p{
+    max-width: 75%;
+  }
+}
+/* end messages */
+
