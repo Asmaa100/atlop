@@ -1,4 +1,4 @@
-
+// side menu
 window.onload = function(e){ 
   let subMenu = document.getElementById('subMenu')
   let fullPageMenu = document.getElementById('fullPageMenu')
@@ -45,3 +45,7 @@ rtl:true,
   },
 });
 
+$(document).ready(function () {
+  new WOW().init();
+
+})

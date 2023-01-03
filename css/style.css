@@ -214,7 +214,10 @@ nav .side-navbar-content .side-nav-notifications span.badge{}
 .order-slider .carousel-indicators .active{
   background-color: var(--primary-color);
 }
-
+.home-slider img {
+  height: 250px;
+  border-radius: 16px;
+}
 /* end slider home */
 
 /* start categories */
@@ -229,8 +232,8 @@ nav .side-navbar-content .side-nav-notifications span.badge{}
   background-color:#D6D9E1
   ;
 }
-.categories .people-category>h4 ,
-.categories .company-category>h4{
+.categories .people-category>h3,
+.categories .company-category>h3{
   color: var(--second-color);
   font-weight: bold;
 }
@@ -252,7 +255,7 @@ nav .side-navbar-content .side-nav-notifications span.badge{}
 }
 .categories .people-category .category-offer:hover img, 
 .categories .company-category .category-offer:hover img{
-  filter: invert(1);
+  filter:grayscale(1) invert(1);
 }
 .categories .company-category .category-offer{
   background-color: #F8F8F8
@@ -407,7 +410,8 @@ img.team-work{
   }
   .register .register-form  #upload-photo ,
   .confirm-register .confirm-register-form  #upload-photo ,
-  .create-order .create-order-form #upload-photo
+  .create-order .create-order-form #upload-photo,
+  .messages .message-content .write-message #upload-photo
   {
     opacity: 0;
     position: absolute;
@@ -1282,7 +1286,7 @@ font-size: 11px;
 .messages .search button{
   position: absolute;
   top: 10px;
-  left: 10px;
+  left: 35px;
   color: #BEBEBE;
   cursor: pointer;
   background: none;
@@ -1298,6 +1302,14 @@ font-size: 11px;
   border-radius: 8px;
   box-shadow: none;
 }
+.messages .contacts .nav-pills .nav-link .view-message{
+  overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 1;
+-webkit-box-orient: vertical;
+}
+
 .messages .contacts .nav-pills .nav-link .time{
   font-size: 12px;
 }
@@ -1309,7 +1321,7 @@ font-size: 11px;
 
 }
 .messages .message-content {
-  height: 400px;
+  height: 450px;
   position: relative;
   background-color: #fff;
 }
@@ -1332,7 +1344,8 @@ font-size: 11px;
   position: relative;
   width: 90%;
 }
-.messages .message-body .tab-content .write-message .input-send-message button{
+.messages .message-body .tab-content .write-message .input-send-message button,
+.messages .message-body .tab-content .write-message .input-send-message .cam{
   position: absolute;
   left: 15px;
   top: 25px;
@@ -1340,8 +1353,11 @@ font-size: 11px;
   border: none;
   color: var(--primary-color);
 }
+.messages .message-body .tab-content .write-message .input-send-message .cam i{
+  cursor: pointer;
+}
 .messages .message-body .tab-content .write-message .input-send-message button.mice{
-  left: 40px;
+  left: 45px;
 
 }
 .messages .message-body .tab-content .write-message .input-send-message input{
@@ -1368,6 +1384,10 @@ color: #fff;
 .messages .messenger-msg p{
   background-color: rgba(147, 154, 181,0.2)!important;
   color: #000;
+}
+.messages .message-body .tab-content .cont-messages{
+  height: 370px;
+  overflow: auto;
 }
 @media (max-width:768px) {
   .messages .sender-msg p ,.messages .messenger-msg  p{
