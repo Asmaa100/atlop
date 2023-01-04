@@ -293,6 +293,9 @@ height: 85px;
   height: 500px;
   
 }
+.forms .row{
+  overflow: hidden;
+}
 img.team-work{
   position: absolute;
   top: 150px;
@@ -702,6 +705,13 @@ font-size: 18px;
 .favorites .order-card{
   border-radius: 16px;
   border: none;
+}
+.favorites .order-card{
+  background-color: transparent;
+
+}
+.favorites .order-card .row{
+  border-radius: 16px;
 }
 .orders .order-card h5,
  .orders .order-card .price,
@@ -1250,6 +1260,7 @@ font-size: 11px;
 /* start messages */
 .messages{
   margin-bottom: 100px;
+  overflow: hidden;
 }
 
 .messages .head-message{
