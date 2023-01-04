@@ -914,6 +914,9 @@ bottom: -10px;
 left: 0;
 font-size: 11px;
 }
+.addition-details .comments .send-comment .comment{
+  width: 85%;
+}
 .addition-details .comments .send-comment input {
   background: #ECECEC;
   color: var(--primary-color);
@@ -953,7 +956,6 @@ font-size: 11px;
 .contactType-modal  #myMobile{
   width: 120px;
 }
-.addition-details{}
 @media (max-width:772px) {
   .order-slider  .carousel-item img{
     height: 200px;
@@ -963,9 +965,46 @@ font-size: 11px;
     padding-bottom: 0 !important;
   }
 }
+
 .order-details .reorder{
   background-image: linear-gradient(#3A4D95,#1C254A );
   color: #fff;
+}
+@media (max-width:992px) {
+  .addition-details .comments .send-comment .comment{
+    width: 94%;
+  }
+  
+}
+@media (max-width:768px) {
+  .order-details .publisher-info ,
+  .order-details .publisher-info .name,
+  .order-details .publisher-info .contact,
+  .order-details .publisher-info .address{
+    display: block !important;
+    justify-content: center;
+  }
+  .order-details .publisher-info .name p{
+    margin: 0 !important;
+  }
+  .order-details .publisher-info .address h6{
+    display: inline-block;
+  }
+  .order-details .publisher-info .address{
+    width: 100% !important;
+    text-align: center;
+  }
+  .order-details .publisher-info .name,
+  .order-details .publisher-info .contact,
+  .order-details .publisher-info .address{
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+@media (max-width:500px) {
+  .addition-details .comments .send-comment input {
+    margin: 0 15px;
+  }
 }
 /* end order-details */
 /* start my orders */
